@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Earthquake Heatmap Visualization Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project visualizes earthquake data on a heatmap using React for the front end and Express for the back end. The earthquake data is fetched from the USGS API and displayed using Leaflet with a heatmap layer.
 
-## Available Scripts
+# Backend 
 
-In the project directory, you can run:
+The backend is built using Express and serves an endpoint to fetch earthquake data from the USGS API. In backend directory server.js
 
-### `npm start`
+# Frontend 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The frontend is built using React and TypeScript. It fetches the data from the backend and visualizes it on a Leaflet map with a heatmap layer.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Prerequisites
 
-### `npm test`
+Node.js
+npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Clone Repository 
 
-### `npm run build`
+git clone https://github.com/khadeeja45/EarthquakeHeatMapVisualization
+cd heatmap-visualization
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Install backend dependencies
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigate to the client directory and install frontend dependencies
+cd client
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Running the project 
 
-### `npm run eject`
+# Start the frontend development server
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Start backend server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+cd backend 
+node server.js
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The frontend will be running on http://localhost:3000 and the backend server on http://localhost:5000.
